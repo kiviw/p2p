@@ -1,0 +1,32 @@
+<!--
+Main template for Bunker marketplace.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bunker Marketplace</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bunker Marketplace</h1>
+        <p>Monero Balance: {{ monero_balance }}</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Welcome to Bunker Marketplace</h2>
+        <p>Buy and sell digital and physical goods securely using Monero.</p>
+    </main>
+    <footer>
+        <p>Monero to USD Conversion Rate: ${{ get_monero_usd_conversion() }}</p>
+    </footer>
+</body>
+</html>

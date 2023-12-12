@@ -1,0 +1,31 @@
+Task:
+create a peer-to-peer marketplace in python for both digital and physical goods, operating on an Ubuntu22 server and provide the complete source code have implemented all the functions. Transactions will exclusively use Monero, with users obtaining a unique Monero subaddress at registration via Monero RPC on localhost:18080. User-associated subaddresses will be maintained for transactions. Implement a captcha at registration and login, utilizing an open-source, alphanumeric five-figure combination to thwart bots. The marketplace, designed with a dark theme and blue text, should be mobile-responsive, displaying Monero account balances at the top. Use CoinGecko API for USD conversion, showing rates in the footer. Products should feature dual pricing in Monero and USD. Allow user withdrawals to Monero addresses, manually processed by the admin upon withdrawal requests. Deposits are automatically credited after at least 2 confirmations, confirmed by Monero wallet RPC. All sales are subject to a commission of 8 percent that is paid by the buyer after a sale is completed. Buyer-seller messaging will be encrypted using PGP tied to user registrations. Admin intervention in disputes is enabled. PGP keys serve as the sole means for password recovery. Admin-managed product categories and an inclusive forum for user discussions are incorporated. Admin dashboard control includes editing hostname, port, and overseeing user withdrawal requests, managing users that is delete, ban users, create user, add user balance, view all transactions in the marketplace. Provide all the root files completed with all the code so that i will just have to install in and run it out of the box. The marketplace must work out of the box the customer is not expected to start adding code after you have provided the files to them. Make sure you give a complete marketplace that will work once installed on the server at folder /var/www/html/. The script should be cloned to the server /var/www/html/  folder and connected to the mysql database and then the admin will use domain.tld/admin to access the admin dashboard. The admin should be able to change app icon and logo on the admin dashboard and also add new categories right from the admin dashboard. Name the marketplace 'Bunker'  by default and admin name should be mrbunker with password 12345678 which can be changed later. Provide all the files with complete code for a complete marketplace. Don't forget to give the database schema. The seller should be able to upload product image when creating a product, choose category for the product, give a description of the product, name it of course and put the price in usd. The marketplace will then convert the price using ajax to monero and display both prices on product listing where the buyer can view both prices. The conversation should be accurate to current live price and the the marketplace will fetch live prices every minute once per minute and update it using ajax. I have monero wallet rpc running smoothly on the installation server on localhost port 18080. Do not try to execute the script just list all the files in their respective folders and subfolders if applicable. Give a detailed installation guide from cloning from Github to adding new categories.
+
+Config:
+ChatEnvConfig.clear_structure: True
+ChatEnvConfig.git_management: False
+ChatEnvConfig.gui_design: True
+ChatEnvConfig.incremental_develop: False
+
+
+Roster:
+Chief Executive Officer, Counselor, Chief Human Resource Officer, Chief Product Officer, Chief Technology Officer, Programmer, Code Reviewer, Software Test Engineer, Chief Creative Officer
+
+Modality:
+website
+
+Ideas:
+
+
+Language:
+ Python
+
+Code_Version:
+7.0
+
+Proposed_images:
+0
+
+Incorporated_images:
+0
+
